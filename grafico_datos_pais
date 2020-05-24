@@ -1,0 +1,13 @@
+%Grafica los datos del archivo de excel de cada pais
+pkg load io;
+dates = {'28/03', '30/03', '31/03', '03/04', '05/04', '07/04', '09/04', '17/04', '01/05', '03/05'};
+data = xlsread('nuevosDatos.xlsx');
+timeFormat='dd/mm';
+xdatenum=datenum(dates,timeFormat);
+hold off
+scatter(xdatenum,data(:,1))
+scatter(xdatenum,data(:,2))
+scatter(xdatenum,data(:,3))
+datetick('x',timeFormat,'keepticks')
+hold on
+view([0,90])
