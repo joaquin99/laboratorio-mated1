@@ -39,5 +39,5 @@ datetick('x',timeFormat,'keepticks');
 
 xlabel('Fecha');
 ylabel('Cantidad');
-legend('Location','southeast');
+legend('Location','northwest');
 hold off
