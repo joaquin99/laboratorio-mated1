@@ -28,6 +28,8 @@ endfor
 %Se toma la media aritmetica de alfa
 media_coef = mean(coef_muerte);
 
+datoAMostrar = 'Muertos';
+
 hold on
 
 scatter(xdatenum,datos(:,elegirDato(datoAMostrar(1))),'DisplayName',[datoAMostrar,' en ',lugar])
